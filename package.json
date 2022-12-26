@@ -1,0 +1,23 @@
+{
+  "name": "livecode1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --no-source-map src/main.scss static/main.css",
+    "watch": "sass --no-source-map --watch src/main.scss static/main.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dansaa8/LiveCode1.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dansaa8/LiveCode1/issues"
+  },
+  "homepage": "https://github.com/dansaa8/LiveCode1#readme",
+  "dependencies": {
+    "sass": "^1.57.1"
+  }
+}
