@@ -1,6 +1,7 @@
 html, body {
     margin: 0;
     padding: 0;
+    font-family: Roboto;
 }
 
 img {
@@ -8,7 +9,11 @@ img {
 }
 
 $bp-medium: 600px;
-$c-charcoalBlack: rgb(9, 39, 13);
+$c-mainBg: rgb(171, 85, 85);
+$c-hoverColor: rgb(255, 81, 81);
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-@import "sections/header.scss"
+
+
+@import "sections/header.scss";
+@import "sections/main-nav.scss";
