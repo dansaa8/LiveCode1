@@ -1,0 +1,20 @@
+.button {
+    display: block;
+    border-radius: 4px;
+    padding: 1em em;
+    font-weight: 700;
+    text-decoration: none;
+    text-align: center;
+
+    &.primary {
+        background-color: $c-brightRed;
+        color: white;
+    }
+
+    &.secondary {
+        background-color: $c-lightBlue;
+        color: $c-darkBlue;
+    }
+
+
+}
