@@ -2,6 +2,13 @@
 html, body {
   margin: 0;
   padding: 0;
+  font-family: Roboto;
+  font-size: 18px;
+}
+@media (min-width: 1000px) {
+  html, body {
+    font-size: 24px;
+  }
 }
 
 img {
@@ -9,20 +16,123 @@ img {
 }
 
 header {
-  background-color: rgb(56, 56, 60);
+  background-color: rgb(6, 2, 69);
   color: rgb(255, 255, 255);
   padding: 1em;
 }
 header h1 {
   margin: 0;
   padding: 0 0 0 140px;
-  font-family: Roboto;
   font-weight: 700;
   font-size: 22px;
   width: 120px;
   background-image: url("logo.png");
-  background-size: 128px auto;
+  background-size: 120px auto;
   background-repeat: no-repeat;
   mix-blend-mode: screen;
   filter: contrast(10);
+}
+@media (min-width: 600px) {
+  header h1 {
+    width: auto;
+    font-size: 40px;
+    padding-left: 140px;
+    padding-top: 30px;
+  }
+}
+
+.main-nav {
+  display: none;
+}
+.main-nav a {
+  font-size: 1rem;
+}
+
+@media (min-width: 600px) {
+  .main-nav {
+    display: block;
+    background-color: rgb(6, 2, 69);
+    padding-top: 1rem;
+  }
+  .main-menu {
+    margin: 0;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .main-menu-item {
+    list-style-type: none;
+  }
+  .main-menu-item a {
+    display: block;
+    color: white;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 0.8em 2em;
+    transition: color 0.2s;
+  }
+  .main-menu-item a:hover {
+    color: lightblue;
+  }
+}
+.hero img {
+  min-height: 40vh;
+  object-fit: cover;
+  width: 100%;
+}
+@media (min-width: 600px) {
+  .hero img {
+    max-height: 60vh;
+  }
+}
+
+.hero-cta {
+  display: flex;
+  flex-direction: column-reverse;
+  margin: 1em 3em;
+}
+.hero-cta .button.primary {
+  background-color: transparent;
+  color: rgb(22, 131, 173);
+  text-decoration: underline;
+  margin: 1em 0;
+}
+
+@media (min-width: 600px) {
+  .hero-cta {
+    flex-direction: row;
+    justify-content: center;
+    gap: 1em;
+    margin: 0;
+    position: relative;
+    top: -2em;
+  }
+  .hero-cta .button.primary {
+    background-color: rgb(255, 21, 23);
+    margin: 0;
+    text-decoration: none;
+    color: white;
+  }
+}
+.testimonial-item {
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: 74px auto;
+}
+
+.button {
+  display: block;
+  border-radius: 4px;
+  padding: 1em em;
+  font-weight: 700;
+  text-decoration: none;
+  text-align: center;
+}
+.button.primary {
+  background-color: rgb(255, 21, 23);
+  color: white;
+}
+.button.secondary {
+  background-color: lightblue;
+  color: rgb(6, 2, 69);
 }
