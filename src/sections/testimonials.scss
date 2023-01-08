@@ -5,27 +5,27 @@
     &:first-child {
         display: block;
     }
-    
+
     figure {
-    display: grid;
-    grid-template-columns: 74px auto;
-    column-gap: 0.5em;
+        display: grid;
+        grid-template-columns: 74px auto;
+        column-gap: 1em;
 
-    blockquote {
-        margin: 0;
-        font-style: italic;
-        font-size: 1.2rem;
-        margin-bottom: 0.5em;
-    }
+        blockquote {
+            margin: 0;
+            font-style: italic;
+            font-size: 1.2rem;
+            margin-bottom: 0.5em;
+        }
 
-    figcaption {
-        grid-column: 2/3;
-    }
+        figcaption {
+            grid-column: 2 / 3;
+        }
     }
 }
 
 @media (min-width: $bp-large) {
-    .testmonial-list {
+    .testimonial-list {
         display: flex;
     }
     .testimonial-item {
